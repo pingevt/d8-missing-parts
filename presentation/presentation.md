@@ -1,14 +1,15 @@
-autosize: true
+autoscale: true
 build-lists: true
 slidenumbers: true
-
 
 # Drupal 8 - The missing Parts
 
 ---
 # Who am I?
+
 ## Pete Inge
-### Senior Developer, Bluecadet
+
+###Senior Developer, Bluecadet
 
 pinge@bluecadet.com
 
@@ -19,6 +20,8 @@ Contact for more info
 ---
 
 # What we’ll cover
+
+- Grabbag of ideas and methodologies
 
 ^ Not as much exact code but more ideas you can hopefully google later and learn more in depth.
 
@@ -57,11 +60,28 @@ Anyone interested in trying to take their work to the next level
 
 ---
 
-# Basics
+# Data-centric appoach
+
+^ Data centric appoach: With a CMS we really deal with Data first. We transform the data for what we need, then present it to our audience.
+
+  So Lets dive in!
 
 ---
 
-# Preprocess/Alter Functions
+[.footer: https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module]
+
+##Libraries
+
+Adding stylesheets and JS to your sites.
+
+^ I won't spend too much time on this, but this is the way in D8 to add your custom JS and CSS to your site.
+What is nice is you can define multiple libraries so you only add what you need for certain elements.
+
+Example: We have multi value fields we use as slide shows. We use flickity for our slideshows. So we have the default flickity JS and CSS and then we have our own custom JS and CSS all included in a library on our theme. We attach this library to the field render array and these files are only loaded when needed.
+
+---
+
+##Preprocess/Alter Functions
 
 - They are all over the place
 - A lot of customization and logic
@@ -72,3 +92,75 @@ Anyone interested in trying to take their work to the next level
 - Examples:
   - Links with icons added in
   - Add custom dynamic markup
+
+---
+
+##Display Formatters
+
+^
+
+---
+
+##Services
+
+^
+
+---
+
+##Tokens
+
+^
+
+---
+
+#Content
+and helping your site Authors
+
+^
+
+---
+
+##Options Fields
+
+^
+
+---
+
+##Form States
+
+^ (Contextual Fields in D7)
+
+---
+
+##Custom Blocks etc
+
+^
+
+---
+
+##Settings Pages
+and preprocess!
+
+^
+
+---
+
+##CKEditor Plugins
+
+^
+
+---
+
+##Custom Batch Processes
+
+- Migration
+- Prebuild Images
+
+^
+
+---
+
+# Custom Code vs. Contrib Module
+
+^
+
