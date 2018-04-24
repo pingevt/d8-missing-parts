@@ -7,11 +7,14 @@ slidenumbers: true
 ---
 # Who am I?
 
+##<br>
+
 ## Pete Inge
 
 ###Senior Developer, Bluecadet
 
 pinge@bluecadet.com
+https://github.com/pingevt/d8-missing-parts
 
 ^ Experience
 Current
@@ -71,17 +74,21 @@ Anyone interested in trying to take their work to the next level
 [.footer: https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module]
 
 ##Libraries
+####Adding stylesheets and JS to your sites
 
-Adding stylesheets and JS to your sites.
+- Include custom CSS/JS for specific elements
+- Helps with optimizations, file size etc.
+
 
 ^ I won't spend too much time on this, but this is the way in D8 to add your custom JS and CSS to your site.
 What is nice is you can define multiple libraries so you only add what you need for certain elements.
-
 Example: We have multi value fields we use as slide shows. We use flickity for our slideshows. So we have the default flickity JS and CSS and then we have our own custom JS and CSS all included in a library on our theme. We attach this library to the field render array and these files are only loaded when needed.
 
 ---
 
 ##Preprocess/Alter Functions
+
+![right fit](images/preprocess_node.png)
 
 - They are all over the place
 - A lot of customization and logic
@@ -89,21 +96,77 @@ Example: We have multi value fields we use as slide shows. We use flickity for o
 - Remove logic from template files
   - Templates should be for presentation, not logic
 
+^
+
+---
+
+##Preprocess/Alter Functions (con't)
+
 - Examples:
   - Links with icons added in
+  - 'Override' fields
   - Add custom dynamic markup
 
 ---
 
 ##Display Formatters
 
-^
+![right fit](images/display_formatters.png)
+
+- What is a Display Formatter?
+
+^ What is a Display formatter?
+In essence,
+its taking our data,
+manipulating it,
+and then creating new data to theme (Sometimes done together)
+
+^ Example: Link Field
 
 ---
 
-##Services
+##Display Formatters (con't)
 
-^
+![right fit](images/display_formatters.png)
+
+- Why use a Display Formatter?
+  - It's the "Drupal" Way
+  - Re-usability
+  - Debugging
+
+^It's the "Drupal" Way: non-coders can see this in the GUI
+Re-usability: use accross multiple fields and potentially field types
+Debugging: Typical thing to look for when debugging
+
+---
+
+##Display Formatters (con't)
+
+![right fit](images/display_formatter_code.png)
+
+Re-use and learn from core modules
+
+^A lot of times I just want to tweak one small thing, extend from core
+Copy cores and modify to your heart’s content
+Most of this could be done in a preprocess, but now I don’t have to code it for every use case, just set it in the display formatter and it should work.
+
+^Examples:
+IVC - Accessibility Fields
+IVC - Pricing (simple)
+Mann - Viewsreference Preview (more complex)
+
+
+---
+
+[.footer: https://www.drupal.org/docs/8/api/services-and-dependency-injection/services-and-dependency-injection-in-drupal-8]
+##Services
+<br>
+###What is a Service
+- In Drupal 8 speak, a service is any object managed by the services container.
+
+ANALOGY???
+
+^ What? That explains a whole lot. If you re-use code, or doing the same thing over and over, look at using a service.
 
 ---
 
