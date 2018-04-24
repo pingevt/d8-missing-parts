@@ -172,26 +172,114 @@ ANALOGY???
 
 ##Tokens
 
-^
+![right fit](images/tokens.png)
+
+^ Create your own to expose data in an unlimited way
+
+---
+
+##Tokens (con't)
+
+```php
+/**
+ * Implements hook_token_info().
+ */
+function hook_token_info() {
+  // Define your token.
+}
+
+/**
+ * Implements hook_tokens().
+ */
+function hook_tokens($type, $tokens,
+array $data, array $options, BubbleableMetadata $bubbleable_metadata) {
+  // Code to replace your tokens
+}
+```
+
+^Examples:
+Path aliases
+Meta Tags (A lot)
+“Override” fields (Display title)
+
 
 ---
 
 #Content
 and helping your site Authors
 
-^
+^We now have few more things in our tool belt. Lets talk about some specifics and how we combine some of this.
 
 ---
 
 ##Options Fields
+and preprocess!
+
+<br>
+- Basically, fields that define layout/content, but don't actually show on the FE
+
+^We use these mainly with Paragraphs to accomodate an easier admin solution.
+
+---
+
+##Options Fields Ex.
+
+![inline ](images/mann_paragraphs_fe.png)
 
 ^
+
+---
+
+##Options Fields Ex.
+
+![right fit](images/mann_paragraphs_be.png)
+
+- define color theme
+- define Image alignment
+- define Image shape
+- define background shape (hidden|circle|square)
+- define background message
+
+^Allow for an easier author experience
+There is one place to add content, and then can tweak settings
+
+---
+
+##Settings Pages
+and preprocess!
+
+^ This extends what we just talked aout one step further.
+
+---
+
+##Settings Pages
+
+![right fit](images/yanni_cropped.png)
+
+- Most content here was global (but editable)
+- Most content was allowed/disallowed for an event
+- These were simple bools, and I didn't want to bake into field config
+
+^Keeps content out of configuration (save as Drupal state)
+Content Authors have the ability to manage things at a global level rather than having to update content in numerous places
+Potentially could be blocks or something similar, but I believe this is much simpler implementation
 
 ---
 
 ##Form States
 
-^ (Contextual Fields in D7)
+![inline ](vid/states.mov)
+
+^ Think (Contextual Fields in D7)
+
+---
+
+##Form States (con't)
+
+- Clean up your forms
+
+
+^ Think (Contextual Fields in D7)
 
 ---
 
@@ -201,16 +289,25 @@ and helping your site Authors
 
 ---
 
-##Settings Pages
-and preprocess!
+##CKEditor Plugins
 
-^
+- Clients always want more functionality in the WYSIWYG
+  - Our typical response is NO
+  - but really?
+- Con: have to learn new system
+
+- Overall improves Admin experience
+
+^ Our typical response is NO
 
 ---
 
-##CKEditor Plugins
+##CKEditor Plugins (ex)
 
-^
+![inline fit](images/ckeditor.png)
+
+^ We had this design pattern we didn't know how to implement.
+Great pattern for a typical boring page.
 
 ---
 
