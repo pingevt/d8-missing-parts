@@ -1,8 +1,11 @@
 autoscale: true
 build-lists: true
 slidenumbers: false
+footer: Pete Inge | Bluecadet | D8: the Missing Parts
 
 # Drupal 8 - The missing Parts
+
+^ **Be the Story Teller
 
 ---
 
@@ -28,6 +31,33 @@ Contact for more info
 
 ---
 
+#Bluecadet
+
+---
+
+#Bluecadet
+
+---
+
+#Bluecadet
+
+---
+
+# Who is this for?
+
+- Anyone interested in getting better at Drupal
+- "Site Builders"
+- Themers
+- Beginner Coders
+
+^- Anyone interested in trying to take their work to the next level
+- Get “Site Builders” into code
+- Beginner Code monkeys
+- Developers who want to improve the Admin or config side of Drupal
+- Anyone interested in trying to take their work to the next level
+
+---
+
 # What we’ll cover
 
 - Grabbag of ideas
@@ -39,27 +69,37 @@ Contact for more info
 
 ---
 
-# Who is this for?
+# What we’ll cover
 
-- "Site Builders"
-- Beginner Coders
-- Anyone iterested in getting better at Drupal
-
-^ Get “Site Builders” into code
-Beginner Code monkeys
-Developers who want to improve the Admin or config side of Drupal
-Anyone interested in trying to take their work to the next level
+1. Data
+  - Libraries
+  - Preprocess
+  - Display Formatters
+  - Services
+  - Tokens
 
 ---
 
-# Where I'm coming from (What drives me to do what i do)
+# What we’ll cover
+
+2. Content
+  - Form States
+  - Option Fields
+  - Settings Pages
+  - CKeditor Plugins
+  - Batch Processes
+  - Honorable Mentions
+
+---
+
+# \Drupal\MyWay->config();
 
 - Customization is key to taking your site to the next level
 - Drupal is very data centric, and can be very confusing to Content Authors
 
 ---
 
-#Where I'm coming from (What drives me to do what i do)
+# \Drupal\MyWay->config();
 
 - Let’s try to do it closer to the “Drupal” way
 - “In Drupal there are 10 ways to do something and 5 of them are correct”
@@ -71,7 +111,7 @@ Anyone interested in trying to take their work to the next level
 
 ---
 
-# Where I'm coming from (What drives me to do what i do)
+# \Drupal\MyWay->config();
 
 - We should always be thinking about the next developer.
 
@@ -79,7 +119,11 @@ Anyone interested in trying to take their work to the next level
 
 ---
 
-# Data-centric appoach
+# [fit] 1. Data
+
+---
+
+# 1. Data
 
 - Input Raw Data
 - Transform the Data
@@ -94,11 +138,15 @@ So Lets dive in!
 
 ---
 
-[.footer: https://www.drupal.org/docs/8/creating-custom-modules/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-module]
-[.build-lists: false]
+# [fit] Libraries
 
-##Libraries
-####Adding stylesheets and JS to your sites
+---
+
+#Libraries
+
+Adding stylesheets and JS to your sites
+
+![right fit](images/libraries.png)
 
 - Include custom CSS/JS for specific elements
 - Helps with optimizations, file size etc.
@@ -106,8 +154,31 @@ So Lets dive in!
 
 ^ I won't spend too much time on this, but this is the way in D8 to add your custom JS and CSS to your site.
 - What is nice is you can define multiple libraries so you only add what you need for certain elements.
-<br>
+
+---
+
+#Libraries (ex)
+
+![inline ](vid/flickity.mov)
+
+^
 Example: We have multi value fields we use as slide shows. We use flickity for our slideshows. So we have the default flickity JS and CSS and then we have our own custom JS and CSS all included in a library on our theme. We attach this library to the field render array and these files are only loaded when needed.
+
+---
+
+## [fit] Preprocess/
+## [fit] Alter
+## [fit] Functions
+
+---
+
+[.footer: https://api.drupal.org/api/drupal/core!core.api.php/group/hooks/8.2.x]
+
+##Preprocess/Alter Functions
+
+- Hooks are specially-named functions that a module defines (this is known as "implementing the hook"), which are discovered and called at specific times to alter or add to the base behavior or data (this is known as "invoking the hook").
+
+^ What is a hook?
 
 ---
 
@@ -127,9 +198,11 @@ Example: We have multi value fields we use as slide shows. We use flickity for o
 
 ---
 
-##Preprocess/Alter Functions (con't)
+##Preprocess/Alter Functions
 
 Examples
+
+![right fit](images/links_w_icon.png)
 
 - Links with icons added in
 - 'Override' fields
@@ -141,6 +214,11 @@ Examples
 - Insert google maps
 <br >
 Let's get another Step deeper...
+
+---
+
+## [fit] Display
+## [fit] Formatters
 
 ---
 
@@ -162,7 +240,7 @@ and then creating new data to theme (Sometimes done together)
 
 ---
 
-##Display Formatters (con't)
+##Display Formatters
 
 ![right fit](images/display_formatters.png)
 
@@ -174,11 +252,12 @@ Why use a Display Formatter?
 
 ^-It's the "Drupal" Way: non-coders can see this in the GUI
 - Re-usability: use across multiple fields
+  Let's think, Preprocessors => One-off vs Display Formatters => Re-usability
 - Debugging: Typical thing to look for when debugging
 
 ---
 
-##Display Formatters (con't)
+##Display Formatters
 
 ![right fit](images/display_formatter_code.png)
 
@@ -189,18 +268,13 @@ Copy cores and modify to your heart’s content
 Most of this could be done in a preprocess, but now I don't have to inturupt Drupal's flow, I can be a part of it.
 - *And we do have display formatter Settings
 
-^Examples:
-IVC - Accessibility Fields
-IVC - Pricing (simple)
-Mann - Viewsreference Preview (more complex)
-
 ---
 
 ##Display Formatters (ex)
 
 ![right fit](images/display_formatter_code.png)
 
-![left inline](images/bool.png)
+![left inline](images/bool3.png)
 
 ^Examples:
 12 Accessibility Fields
@@ -210,7 +284,10 @@ Time to get a lot more complicated
 
 ---
 
-[.footer: https://www.drupal.org/docs/8/api/services-and-dependency-injection/services-and-dependency-injection-in-drupal-8]
+## [Fit] Services
+
+---
+
 ##Services
 
 What is a Service
@@ -224,6 +301,7 @@ ANALOGY???
 Basically going to create a class to re-use your code. OOP for the win!
 <br>
 That was a little abstract, lets move on to something more tangible
+
 
 ---
 
@@ -240,7 +318,7 @@ Metatags and URL aliases are probably most common.
 
 ---
 
-##Tokens (con't)
+##Tokens
 
 ```php
 /**
@@ -267,10 +345,37 @@ When you data gets complex, tokens can help simplify
 
 ---
 
+#[fit] 2. Content
+
+---
+
 #Content
 and helping your site Authors
 
 ^We now have few more things in our tool belt. Lets talk about some specific methodology and how we combine these tools.
+
+---
+
+## [fit] Form
+## [fit] States
+
+---
+
+##Form States
+
+![inline ](vid/states.mov)
+
+^ Think (Contextual Fields in D7)
+- T-up video
+
+---
+
+##Form States
+
+- Clean up your forms
+- Lead content Authors through the data
+
+^
 
 ---
 
@@ -342,32 +447,10 @@ Potentially could be blocks or something similar, but I believe this is much sim
 
 ---
 
-##Form States
+##Settings Pages
 
-![inline ](vid/states.mov)
+![inline fit](images/event_fields.png)
 
-^ Think (Contextual Fields in D7)
-
----
-
-##Form States (con't)
-
-Clean up your forms
-Lead content Authors through the data
-
-^ Think (Contextual Fields in D7)
-
----
-
-##Custom Snippets
-
-DO I NEED THIS??????
-
-- Blocks
-- Themes
-- Forms
-
-^
 
 ---
 
@@ -427,7 +510,7 @@ NASM: updating collections
 # Custom Code vs. Contrib Module
 
 - Cons
-  - Updates
+  - Updates/Maintenance
   - Do you really know enough to do it yourself?
 
 ---
