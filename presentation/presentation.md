@@ -1,6 +1,6 @@
 autoscale: true
 build-lists: true
-slidenumbers: true
+slidenumbers: false
 
 # Drupal 8 - The missing Parts
 
@@ -470,6 +470,7 @@ https://www.drupal.org/docs/8/api/services-and-dependency-injection/services-and
 https://api.drupal.org/api/drupal/core!core.api.php/group/extending/8.2.x
 https://www.drupal.org/docs/8/creating-custom-modules
 https://api.drupal.org/api/drupal/core%21includes%21form.inc/group/batch/8.2.x
+https://www.drupal.org/docs/8/api/state-api/overview
 
 ---
 
