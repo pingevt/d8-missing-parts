@@ -21,7 +21,7 @@ footer: Pete Inge | Bluecadet | D8: the Missing Parts
 pinge@bluecadet.com
 https://github.com/pingevt/d8-missing-parts
 
-![right 90%](images/logo.gif)
+![right 78%](images/logo.gif)
 
 ^ Experience: ~10yrs freelance in web dev
 Worked in D5-D8
@@ -43,7 +43,7 @@ Contact for more info
 # Who is this for?
 
 - Anyone interested in getting better at Drupal
-- "Site Builders"
+- “Site Builders”
 - Themers
 - Beginner Coders
 
@@ -59,8 +59,8 @@ Contact for more info
 # What we’ll cover
 
 - Grabbag of ideas
-- methodologies
-- and hopefully some best practices
+- Methodologies
+- And hopefully some best practices
 
 ^ Not as much exact code but more ideas you can hopefully google later and learn more in depth.
 - I do have some links if you download this presentation.
@@ -102,7 +102,7 @@ Contact for more info
 - Let’s try to do it closer to the “Drupal” way
 - “In Drupal there are 10 ways to do something and 5 of them are correct”
 
-  - By doing it the “Drupal way”, makes it easier to debug
+  - By doing it the “Drupal Way”, makes it easier to debug
   - Mental checklist of what to look at when debugging
 
 ^ I believe Drupal 8 has gottten better, but still...
@@ -125,12 +125,12 @@ Contact for more info
 
 - Input Raw Data
 - Transform the Data
-- Present to our Audience (html/css/js)
+- Present to our Audience (HTML/CSS/JS)
 
 ^ Data centric appoach:
 - With a CMS we really deal with Data first.
 - We transform the data for what we need,
-- then present it to our audience.
+- Then present it to our audience.
 <br >
 So Lets dive in!
 
@@ -313,7 +313,7 @@ Smoothie Maker
 
 ##Services (ex)
 
-- Taxonomy Terms with icons
+Taxonomy Terms with icons
 
 ![right ](images/services_ex.png)
 
@@ -368,7 +368,7 @@ When you data gets complex, tokens can help simplify
 ---
 
 #2 Content
-and helping your site Authors
+and helping your Site Authors
 
 ^We have now added a few more things in our tool belt to alter our data. Lets talk about some specific methodology and how we combine these tools.
 <br>
@@ -384,7 +384,7 @@ Let's start with something simple...
 ##Form States
 
 - Clean up your forms
-- Lead content Authors through the data
+- Lead Content Authors through the data
 
 ^ Think (Contextual Fields in D7)
 
@@ -427,11 +427,11 @@ and preprocess!
 
 ![right fit](images/mann_paragraphs_be.png)
 
-- define color theme
-- define Image alignment
-- define Image shape
-- define background shape (hidden|circle|square)
-- define background message
+- Define color theme
+- Define image alignment
+- Define image shape
+- Define background shape (hidden|circle|square)
+- Define background message
 
 ^Allow for an easier author experience
 There is one place to add content, and then can tweak settings
@@ -527,7 +527,7 @@ Great pattern for a typical boring page.
 
 ##Custom Batch Processes
 
-What is a batch Process?
+What is a Batch Process?
 
 - Functions allowing forms processing to be spread out over several page requests, thus ensuring that the processing does not get interrupted because of a PHP timeout, while allowing the user to receive feedback on the progress of the ongoing operations. - api.drupal.org
 
@@ -539,7 +539,7 @@ What is a batch Process?
 
 - Simple Migrations or content updates
 - Prebuild Image styles (or whatever assets) for something else (headless)
-- combine with cron jobs to run large tasks as needed
+- Combine with cron jobs to run large tasks as needed
 
 ^Typically used in Dev, for "quick updates"
 NASM: updating collections
@@ -575,6 +575,8 @@ NASM: updating collections
 - Cons
   - Updates/Maintenance
   - Do you really know enough to do it yourself?
+
+^ SECURITY
 
 ---
 
