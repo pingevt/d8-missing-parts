@@ -621,3 +621,12 @@ https://www.drupal.org/docs/8/api/state-api/overview
 
 #Thanks!
 ###Questions?
+
+---
+
+#Bluecadet
+
+![right](images/bc_workspace.jpg)
+![left](images/bluecadet-nasm-website.jpg)
+
+---
