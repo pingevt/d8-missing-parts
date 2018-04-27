@@ -5,7 +5,8 @@ footer: Pete Inge | Bluecadet | D8: the Missing Parts
 
 # Drupal 8 - The missing Parts
 
-^ **Be the Story Teller
+^ * Be the Story Teller
+* Breathe
 
 ---
 
@@ -25,6 +26,7 @@ https://github.com/pingevt/d8-missing-parts
 ^ Experience: ~10yrs freelance in web dev
 Worked in D5-D8
 Current: @ BC for 2.5 years
+I'm a problem solver
 Contact for more info
 
 ---
@@ -47,7 +49,8 @@ Contact for more info
 
 ^- Anyone interested in trying to take their work to the next level
 - Get “Site Builders” into code
-- Beginner Code monkeys
+- Themers
+- Beginner Code
 - Developers who want to improve the Admin or config side of Drupal
 - Anyone interested in trying to take their work to the next level
 
@@ -225,9 +228,9 @@ What is a Display Formatter?
 
 ^ What is a Display formatter?
 In essence,
-its taking our data,
+its taking our field data,
 manipulating it,
-and then creating new data to theme (Sometimes done together)
+and then creating the rendered mark up
 
 ^ Example: Link Field
 - field includes url, link text, target
@@ -246,8 +249,9 @@ Why use a Display Formatter?
 - Debugging
 
 ^-It's the "Drupal" Way: non-coders can see this in the GUI
+- Drupal's flow
 - Re-usability: use across multiple fields
-  Let's think, Preprocessors => One-off vs Display Formatters => Re-usability
+- Let's think, Preprocessors => One-off vs Display Formatters => Re-usability
 - Debugging: Typical thing to look for when debugging
 
 ---
@@ -258,9 +262,8 @@ Why use a Display Formatter?
 
 Re-use and learn from core modules
 
-^A lot of times I just want to tweak one small thing, extend from core
-Copy cores and modify to your heart’s content
-Most of this could be done in a preprocess, but now I don't have to inturupt Drupal's flow, I can be a part of it.
+^- A lot of times I just want to tweak one small thing, extend from core
+- Copy cores and modify to your heart’s content
 - *And we do have display formatter Settings
 
 ---
@@ -429,10 +432,10 @@ and preprocess!
 - define background shape (hidden|circle|square)
 - define background message
 
-^96 options to display this...
-Allow for an easier author experience
+^Allow for an easier author experience
 There is one place to add content, and then can tweak settings
 I have done it and I've seen it done where these would all be different para bundles
+96 options to display this...
 <br>
 *Going back to data centric, your forms don't have to exactly mimic your FE design/experience.
 <br>
