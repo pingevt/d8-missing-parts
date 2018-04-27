@@ -20,9 +20,7 @@ footer: Pete Inge | Bluecadet | D8: the Missing Parts
 pinge@bluecadet.com
 https://github.com/pingevt/d8-missing-parts
 
-
-[BC Logo]
-
+![right 90%](images/logo.gif)
 
 ^ Experience: ~10yrs freelance in web dev
 Worked in D5-D8
@@ -32,14 +30,11 @@ Contact for more info
 ---
 
 #Bluecadet
+![fit](images/bc.jpg)
 
----
+^Established in 2007, Bluecadet is an Emmy Award-winning digital agency that creates world-class websites, mobile apps, interactive installations, and immersive environments. We collaborate with leading museums, cultural institutions, universities, progressive brands, and nonprofit organizations to educate, engage, and entertain.
 
-#Bluecadet
-
----
-
-#Bluecadet
+^ Bluecadet is an experience design agency. We partner with mission-driven organizations to create a broad suite of products and environments. We embrace design, technology, and innovation in the service of content, emotion, and experience. We create experiences that engage audiences through increased knowledge, empathy, and action.
 
 ---
 
@@ -71,7 +66,7 @@ Contact for more info
 
 # What we’ll cover
 
-1. Data
+1 Data
   - Libraries
   - Preprocess
   - Display Formatters
@@ -82,7 +77,7 @@ Contact for more info
 
 # What we’ll cover
 
-2. Content
+2 Content
   - Form States
   - Option Fields
   - Settings Pages
@@ -119,11 +114,11 @@ Contact for more info
 
 ---
 
-# [fit] 1. Data
+# [fit] 1 Data
 
 ---
 
-# 1. Data
+# 1 Data
 
 - Input Raw Data
 - Transform the Data
@@ -198,7 +193,7 @@ Example: We have multi value fields we use as slide shows. We use flickity for o
 
 ---
 
-##Preprocess/Alter Functions
+##Preprocess/Alter Functions (ex)
 
 Examples
 
@@ -295,13 +290,32 @@ What is a Service
 - In Drupal 8 speak, a service is any object managed by the services container.
 - OOP for the win!
 
-ANALOGY???
-
 ^ What? That explains a whole lot. If you re-use code, or doing the same thing over and over, look at using a service.
 Basically going to create a class to re-use your code. OOP for the win!
 <br>
 That was a little abstract, lets move on to something more tangible
 
+---
+
+##Services
+
+Smoothie Maker
+
+![right](images/russell-hobbs-mix-go-steel-blender-smoothie-maker-300.jpg)
+
+^You put a bunch of ingredients in,
+
+---
+
+##Services (ex)
+
+- Taxonomy Terms with icons
+
+![right ](images/services_ex.png)
+
+---
+
+## [fit] Tokens
 
 ---
 
@@ -345,14 +359,16 @@ When you data gets complex, tokens can help simplify
 
 ---
 
-#[fit] 2. Content
+#[fit] 2 Content
 
 ---
 
-#Content
+#2 Content
 and helping your site Authors
 
-^We now have few more things in our tool belt. Lets talk about some specific methodology and how we combine these tools.
+^We have now added a few more things in our tool belt to alter our data. Lets talk about some specific methodology and how we combine these tools.
+<br>
+Let's start with something simple...
 
 ---
 
@@ -363,19 +379,23 @@ and helping your site Authors
 
 ##Form States
 
-![inline ](vid/states.mov)
-
-^ Think (Contextual Fields in D7)
-- T-up video
-
----
-
-##Form States
-
 - Clean up your forms
 - Lead content Authors through the data
 
-^
+^ Think (Contextual Fields in D7)
+
+---
+
+##Form States (ex)
+
+![inline ](vid/states.mov)
+
+^ T it up video
+
+---
+
+## [fit] Options
+## [fit] Fields
 
 ---
 
@@ -387,10 +407,11 @@ and preprocess!
 - Basically, fields that define layout/content, but don't actually show on the FE
 
 ^We use these mainly with Paragraphs to accomodate an easier admin solution.
+- PP LEGO Bricks example. Many types/colors of bricks, can be combined in diffrent ways.
 
 ---
 
-##Options Fields Ex.
+##Options Fields (ex)
 
 ![inline ](images/mann_paragraphs_fe.png)
 
@@ -398,7 +419,7 @@ and preprocess!
 
 ---
 
-##Options Fields Ex.
+##Options Fields (ex)
 
 ![right fit](images/mann_paragraphs_be.png)
 
@@ -413,9 +434,14 @@ Allow for an easier author experience
 There is one place to add content, and then can tweak settings
 I have done it and I've seen it done where these would all be different para bundles
 <br>
-*Going back to data centric, your forms don't have to exaclty mimic your FE deisgn/experience.
+*Going back to data centric, your forms don't have to exactly mimic your FE design/experience.
 <br>
 One more step further...
+
+---
+
+## [fit] Settings
+## [fit] Pages
 
 ---
 
@@ -447,10 +473,14 @@ Potentially could be blocks or something similar, but I believe this is much sim
 
 ---
 
-##Settings Pages
+##Settings Pages (ex)
 
 ![inline fit](images/event_fields.png)
 
+---
+
+## [fit] CKEditor
+## [fit] Plugins
 
 ---
 
@@ -468,19 +498,43 @@ Potentially could be blocks or something similar, but I believe this is much sim
 
 ##CKEditor Plugins (ex)
 
-![inline fit](images/ckeditor.png)
+![right fit](images/bg_design.png)
 
 ^ We had this design pattern we didn't know how to implement.
 Great pattern for a typical boring page.
 
 ---
 
-[.footer: https://api.drupal.org/api/drupal/core%21includes%21form.inc/group/batch/8.2.x]
+##CKEditor Plugins (ex)
+
+![original fit](images/btn.png)
+
+![original fit](images/popup.png)
+
+^ We had this design pattern we didn't know how to implement.
+Great pattern for a typical boring page.
+
+---
+
+## [fit] Batch
+## [fit] Processes
+
+---
 
 ##Custom Batch Processes
 
-- Simple Migrations or content uupdates
-- Prebuild Image styles (or whatever assets) for something else
+What is a batch Process?
+
+- Functions allowing forms processing to be spread out over several page requests, thus ensuring that the processing does not get interrupted because of a PHP timeout, while allowing the user to receive feedback on the progress of the ongoing operations. - api.drupal.org
+
+---
+
+##Custom Batch Processes (ex)
+
+![right](images/batch.png)
+
+- Simple Migrations or content updates
+- Prebuild Image styles (or whatever assets) for something else (headless)
 - combine with cron jobs to run large tasks as needed
 
 ^Typically used in Dev, for "quick updates"
@@ -488,12 +542,17 @@ NASM: updating collections
 
 ---
 
-#Extras:
+#Honorable Mentions:
 
 - Build your own Blocks
 - Build your own Forms
-- Batch API
 - Cron Jobs
+
+---
+
+# [fit] Custom Code
+# [fit] vs.
+# [fit] Contrib Module
 
 ---
 
@@ -501,7 +560,7 @@ NASM: updating collections
 
 - Pros
   - Simplify everything (code/config)
-  - Potentially reduce crud for content authors
+  - Potentially reduce extraneous for content authors
 
 ^Sometimes a module just has too many options/config/settings. Do it yourself, but be careful.
 
