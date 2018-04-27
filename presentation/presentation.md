@@ -176,7 +176,8 @@ Example: We have multi value fields we use as slide shows. We use flickity for o
 
 - Hooks are specially-named functions that a module defines (this is known as "implementing the hook"), which are discovered and called at specific times to alter or add to the base behavior or data (this is known as "invoking the hook").
 
-^ What is a hook?
+^ Key Building block... but first.
+What is a hook?
 
 ---
 
