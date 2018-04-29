@@ -623,7 +623,7 @@ https://www.drupal.org/docs/8/api/state-api/overview
 CKEditor Links:
 https://www.drupal.org/docs/8/core/modules/ckeditor/contributed-modules-and-plug-ins (more adt bottom of page)
 https://docs.ckeditor.com/ckeditor4/latest/guide/widget_sdk_tutorial_1.html
-https://docs.ckeditor.com/ckeditor4/latest/guide/widget_sdk_tutorial_1.html
+https://sdk.ckeditor.com/samples/simplebox.html
 
 ---
 
