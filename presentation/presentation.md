@@ -620,6 +620,11 @@ https://www.drupal.org/docs/8/creating-custom-modules
 https://api.drupal.org/api/drupal/core%21includes%21form.inc/group/batch/8.2.x
 https://www.drupal.org/docs/8/api/state-api/overview
 
+CKEditor Links:
+https://www.drupal.org/docs/8/core/modules/ckeditor/contributed-modules-and-plug-ins (more adt bottom of page)
+https://docs.ckeditor.com/ckeditor4/latest/guide/widget_sdk_tutorial_1.html
+https://docs.ckeditor.com/ckeditor4/latest/guide/widget_sdk_tutorial_1.html
+
 ---
 
 #Thanks!
